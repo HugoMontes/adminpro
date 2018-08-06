@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 
 // Importar el SharedModule
 import { SharedModule } from '../shared/shared.module';
+// Importar modulo para usar ngModel en las vistas
+import { FormsModule } from '@angular/forms';
 
 // Importar los componentes
 import { PagesComponent } from './pages.component';
@@ -33,6 +35,8 @@ import { PAGES_ROUTES } from './pages.routes';
         SharedModule,
         // Agregar al archivo de rutas como importado
         PAGES_ROUTES,
+        // Agregar el FormsModule
+        FormsModule,
     ],
 })
 export class PagesModule { }

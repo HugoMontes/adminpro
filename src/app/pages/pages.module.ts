@@ -14,13 +14,17 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // Importa el archivo de rutas
 import { PAGES_ROUTES } from './pages.routes';
 
+// temporal
+import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
+
 @NgModule({
     // Declaramos las paginas a utilizar
     declarations: [
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
+        IncrementadorComponent,
     ],
     // Para usar las paginas fuera del componente del modulo,
     // las exportamos
@@ -40,3 +44,4 @@ import { PAGES_ROUTES } from './pages.routes';
     ],
 })
 export class PagesModule { }
+

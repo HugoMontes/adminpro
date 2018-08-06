@@ -15,18 +15,23 @@ import { RegisterComponent } from './login/register.component';
 // Eliminar los demas imports DashboardComponent, ProgressComponent, Graficas1Component,
 // HeaderComponent, SidebarComponent, BreadcrumbsComponent, NopagefoundComponent, PagesComponent
 
+// Importar modulo para usar ngModel en las vistas
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
     // Eliminar los: DashboardComponent, ProgressComponent, Graficas1Component,
-    // HeaderComponent, SidebarComponent, BreadcrumbsComponent, NopagefoundComponent, PagesComponent    
+    // HeaderComponent, SidebarComponent, BreadcrumbsComponent, NopagefoundComponent, PagesComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTES,
     PagesModule, // Importar el modulo PagesModule
+    // Agregar el FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

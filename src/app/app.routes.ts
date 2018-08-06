@@ -8,15 +8,15 @@ import { RegisterComponent } from './login/register.component';
 // ProgressComponent, Graficas1Component
 
 // Definir una constante para el arreglo de rutas
-const appRoutes: Routes=[
+const appRoutes: Routes = [
     // Quitar todas las rutas el PagesComponent
-    { path:'login', component: LoginComponent },
-    { path:'register', component: RegisterComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'register', component: RegisterComponent },
     // Para cualquier otra ruta no definida muestra pagenotfound
-    { path:'**', component: NopagefoundComponent },
+    { path: '**', component: NopagefoundComponent },
 ];
 
 // Importar las rutas definniendo una constante APP_ROUTES
 // mediante RouterModule y la funcion forRoot para enviar
 // como rutas principales
-export const APP_ROUTES=RouterModule.forRoot(appRoutes, { useHash: true});
+export const APP_ROUTES = RouterModule.forRoot(appRoutes, { useHash: true});

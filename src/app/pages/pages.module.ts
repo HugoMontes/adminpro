@@ -17,6 +17,11 @@ import { PAGES_ROUTES } from './pages.routes';
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 
+// ng2-charts
+import { ChartsModule } from 'ng2-charts';
+// Importar componente de grafico
+import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
+
 @NgModule({
     // Declaramos las paginas a utilizar
     declarations: [
@@ -25,6 +30,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         ProgressComponent,
         Graficas1Component,
         IncrementadorComponent,
+        // Exportar GraficoDona
+        GraficoDonaComponent,
     ],
     // Para usar las paginas fuera del componente del modulo,
     // las exportamos
@@ -32,7 +39,7 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         PagesComponent,
         DashboardComponent,
         ProgressComponent,
-        Graficas1Component
+        Graficas1Component,
     ],
     imports: [
         // Agregar a SharedModule como importado
@@ -41,6 +48,8 @@ import { IncrementadorComponent } from '../components/incrementador/incrementado
         PAGES_ROUTES,
         // Agregar el FormsModule
         FormsModule,
+        // Importar en los modulos
+        ChartsModule,
     ],
 })
 export class PagesModule { }
